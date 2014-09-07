@@ -1,0 +1,51 @@
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "article.4u.special": Unsupported extension: special
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "div.row": Unsupported extension: row
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "div.wrapper.style1": Unsupported extension: style
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "div.wrapper.style1": Invalid quality: 10
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "h2.icon.fa-twitter.circled": Unsupported extension: circled
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "article.tweet": Unsupported extension: tweet
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "article.tweet": Unsupported extension: tweet
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "article.tweet": Unsupported extension: tweet
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "article.tweet": Unsupported extension: tweet
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "ul.divided": Unsupported extension: divided
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "h2.icon.fa-file.circled": Unsupported extension: circled
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "article.post.stub": Unsupported extension: stub
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "article.post.stub": Unsupported extension: stub
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "article.post.stub": Unsupported extension: stub
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "article.post.stub": Unsupported extension: stub
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "ul.divided": Unsupported extension: divided
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "h2.icon.fa-camera.circled": Unsupported extension: circled
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "div.row.quarter.no-collapse": Expected end of input but "-" found.
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "div.row.quarter.no-collapse": Expected end of input but "-" found.
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "div.row.quarter.no-collapse": Expected end of input but "-" found.
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "div.row": Unsupported extension: row
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "ul.icons": Unsupported extension: icons
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "a.icon.fa-twitter": Expected end of input but "-" found.
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "a.icon.fa-facebook": Expected end of input but "-" found.
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "a.icon.fa-instagram": Expected end of input but "-" found.
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "a.icon.fa-pinterest": Expected end of input but "-" found.
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "a.icon.fa-dribbble": Expected end of input but "-" found.
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "a.icon.fa-linkedin": Expected end of input but "-" found.
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "ul.icons": Unsupported extension: icons
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "section.contact": Unsupported extension: contact
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "ul.menu": Unsupported extension: menu
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "div.container": Unsupported extension: container
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "red button.scroll": Unsupported extension: scroll
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "a.icon.fa-twitter copy": Expected end of input but "-" found.
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "a.icon.fa-facebook copy": Expected end of input but "-" found.
+[Sun Sep 07 2014 14:40:23 GMT-0400 (EDT)] Layer "When a brand new candy bar starts turning people into zombies, ": Expected end of input but "," found.
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "a.button copy": Expected end of input but "c" found.
+[Sun Sep 07 2014 14:46:21 GMT-0400 (EDT)] Layer "div.reel": Unsupported extension: reel
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "span.forward": Unsupported extension: forward
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "span.backward": Unsupported extension: backward
+[Sun Sep 07 2014 14:46:21 GMT-0400 (EDT)] Layer "section.carousel": Unsupported extension: carousel
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "div.wrapper.style2": Unsupported extension: style
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "div.wrapper.style2": Invalid quality: 20
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "a.button": Unsupported extension: button
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "a.button": Unsupported extension: button
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "div.wrapper.style2": Unsupported extension: style
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "div.wrapper.style2": Invalid quality: 20
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "div.wrapper.style1": Unsupported extension: style
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "div.wrapper.style1": Invalid quality: 10
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "article.4u.special": Unsupported extension: special
+[Sun Sep 07 2014 14:39:46 GMT-0400 (EDT)] Layer "article.4u.special": Unsupported extension: special
