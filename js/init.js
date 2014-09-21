@@ -261,6 +261,7 @@
 					
 					$window.bind('resize.helios', function() {
 						window.setTimeout(function() {
+							
 							var s = $header.children('.inner');
 							var sh = s.outerHeight(), hh = $window.height(), h = Math.ceil((hh - sh) / 2) + 1;
 
@@ -297,6 +298,47 @@
 				}
 
 			}
+			//nav scroll
+			//$(document).ready(function(){
+			  var goToByScroll = function(id) {
+			    id = id.replace("link", "");
+			    $("html, body").animate({scrollTop: $("#" + id).offset().top});
+			  }
+			  
+			  $('.goToByScroll').on("click", function(e){
+			    e.preventDefault();
+			    goToByScroll($(this).attr("id")); 
+			  });
+			//});
+			// resizing issue 
+
+			// $('button#resize-fail').click(function() {
+			//     $('figure.book li').each(function(){
+			//         rescale($(this));
+			//     })
+			// });
+
+			// function rescale(elem) {
+			    
+			//     var height = parseInt(elem.css('height'));
+			//     var width = parseInt(elem.css('width'));
+			//     var scalex = parseFloat(elem.attr('scalex'));
+			//     var scaley = parseFloat(elem.attr('scaley'));
+			    
+			//     if (!elem.hasClass('rescaled')){
+			//         var ratioX = scalex;
+			//         var ratioY = scaley;
+			//     }else{          
+			//         var ratioX = 1;
+			//         var ratioY = 1;
+			//     }
+			    
+			//     elem.toggleClass('rescaled');
+			//     elem.css('-webkit-transform', 'scale('+ratioX +', '+ratioY+')');        
+			//     elem.parent().css('width', parseInt(width*ratioX) + 'px');
+			//     elem.parent().css('height', parseInt(height*ratioY) + 'px');
+			// }
+
 
 	});
 

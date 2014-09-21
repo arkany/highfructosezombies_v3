@@ -1,86 +1,6 @@
+$book-green: #A7C939;
+
 // @import url(http://fonts.googleapis.com/css?family=Indie+Flower);
-/*
-	A. Mini Reset 
-*/
-// *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-
-// * {
-//   margin: 0;
-//   padding: 0;
-// }
-
-// ::before,
-// ::after {
-// 	content: "";
-// }
-
-// html,
-// body {
-// 	height: 100%;
-// 	-webkit-font-smoothing: subpixel-antialiased;
-// }
-
-// html {
-// 	font-size: 100%;
-// }
-
-// body {
-// 	background: #ecf0f1;
-// 	color: #34495e;
-// 	font-family: 'Lato', 'Arial', sans-serif;
-// 	font-weight: 400;
-// 	line-height: 1.2;
-// }
-
-// ul {
-// 	margin: 0;
-// 	padding: 0;
-// 	list-style: none;
-// }
-
-// a {
-// 	color: #2c3e50;
-// 	text-decoration: none;
-// }
-
-// .btn {
-// 	display: inline-block;
-// 	margin-top: 100px; 
-// 	font-size: 1.2em;
-// 	font-weight: 700;
-// 	padding: 0.1em 0.8em;
-// 	text-align: center;
-// 	-webkit-transform: rotate(20deg);
-// 	-moz-transform: rotate(20deg);
-// 	transform: rotate(20deg);
-// 	font-family: "Indie Flower", serif;
-// 	-webkit-transition: color 0.3s;
-// 	-moz-transition: color 0.3s;
-// 	transition: color 0.3s;
-// }
-
-// .btn:hover {
-// 	color: #16a085;
-// }
-
-// /* basic grid, only for this demo */
-
-// .align {
-// 	clear: both;
-// 	margin: 90px auto 20px;
-// 	width: 100%;
-// 	max-width: 1170px;
-// 	text-align: center;
-// }
-
-// .align > li {
-// 	width: 500px;
-// 	min-height: 300px;
-// 	display: inline-block;
-// 	margin: 30px 20px 30px 60px;
-// 	padding: 0 0 0 60px;
-// 	vertical-align: top;
-// }
 
 /* ///////////////////////////////////////////////////
 
@@ -105,14 +25,20 @@ Table of Contents
 
 .book {
 	position: relative;
-	width: 160px; 
-	height: 220px;
+	width: 390px; 
+	height: 570px;
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
 	perspective: 1000px;
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
+	clear: both;
+	margin:0 auto;
+	@media screen and (max-width: 450px) {
+		width:200px;
+		height:275px;	
+	}
 }
 
 /*
@@ -135,32 +61,19 @@ Table of Contents
 	}
 }
 
-// .paperback_front::after{
-// 	background-image: -webkit-linear-gradient( -135deg, rgba(255, 255, 255, 0.45) 0%, transparent 100%);
-// 	background-image: -moz-linear-gradient( -135deg, rgba(255, 255, 255, 0.45) 0%, transparent 100%);
-// 	background-image: linear-gradient( -135deg, rgba(255, 255, 255, 0.45) 0%, transparent 100%);
-// 	position: absolute;
-// 	top: 0;
-// 	left: 0;
-// 	bottom: 0;
-// 	right: 0;
-// }
-
 .paperback_back {
-	background-color: #333;
+
+	background-color: $book-green;
 }
 
 /* page */
 
 .ruled_paper > li {
 	background-color: #fff;
-	background-image: -webkit-linear-gradient(rgba(200, 200, 200, 0.1) 0.1em, transparent 0.1em), -webkit-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
-	background-image: -moz-linear-gradient(rgba(200, 200, 200, 0.1) 0.1em, transparent 0.1em), -moz-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
-	background-image: -ms-linear-gradient(rgba(200, 200, 200, 0.1) 0.1em, transparent 0.1em), -moz-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
-	background-image: linear-gradient(rgba(200, 200, 200, 0.1) 0.1em, transparent 0.1em), linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
-	background-size: 100% 0.6em;
 	box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset -1px 0px 1px rgba(150, 150, 150, 0.2);
-	border-radius: 0px 10px 10px 0px;
+	//border-radius: 0px 10px 10px 0px;
+	background-repeat:no-repeat;
+	background-size:cover;
 }
 
 /*
@@ -180,41 +93,43 @@ Table of Contents
 	transform: rotateY(-25deg);
 }
 
-// $paper-deg: -(25 + 2(index))deg;
-// @each index in paperDeg{
-// 	-webkit-transform: rotateY(-27deg);
-// 	-moz-transform: rotateY(-27deg);
-// 	transform: rotateY(-27deg);
+
+$paperDegBase: -25deg;
+@for $index from 1 through 5{
+	.ruled_paper li:nth-child(#{$index}){
+		-webkit-transform: rotateY($paperDegBase - ($index * 2));
+		-moz-transform: rotateY($paperDegBase - ($index * 2));
+		transform: rotateY($paperDegBase - ($index * 2));
+		//background-image: url("../images/book_page#{$index}.jpg");
+	}
+}
+
+// .ruled_paper li:nth-child(1) {
+// 	background-image: url("../images/book_page5.jpg");
 // }
 
-.ruled_paper li:nth-child(1) {
-	-webkit-transform: rotateY(-27deg);
-	-moz-transform: rotateY(-27deg);
-	transform: rotateY(-27deg);
-}
-
+// RIGHT SIDE OF MAIN VIEW
 .ruled_paper li:nth-child(2) {
-	-webkit-transform: rotateY(-29deg);
-	-moz-transform: rotateY(-29deg);
-	transform: rotateY(-29deg);
+	background-image: url("../images/page-inner-right.jpg");
 }
 
+// LEFT SIDE OF MAIN VIEW
 .ruled_paper li:nth-child(3) {
-	-webkit-transform: rotateY(-31deg);
-	-moz-transform: rotateY(-31deg);
-	transform: rotateY(-31deg);
+	background-image: url("../images/page-inner-left-flip.jpg");
 }
 
 .ruled_paper li:nth-child(4) {
-	-webkit-transform: rotateY(-33deg);
-	-moz-transform: rotateY(-33deg);
-	transform: rotateY(-33deg);
+	background-image: url("../images/page2.jpg");
 }
 
 .ruled_paper li:nth-child(5) {
-	-webkit-transform: rotateY(-35deg);
-	-moz-transform: rotateY(-35deg);
-	transform: rotateY(-35deg);
+	background-image: url("../images/page1.jpg");
+}
+
+.ruled_paper li a{
+	display:block;
+	height:inherit;
+	width:inherit;
 }
 
 /*
@@ -225,7 +140,7 @@ Table of Contents
 .paperback_back,
 .paperback_front li,
 .paperback_back li {
-	border-radius: 2px 8px 8px 2px;
+	//border-radius: 2px 8px 8px 2px;
 	position: absolute;
 	top: 0;
 	left: 0px;
@@ -251,7 +166,7 @@ Table of Contents
 
 .paperback_front li img,
 .paperback_back li img {
-	border-radius: 2px 8px 8px 2px;
+	//border-radius: 2px 8px 8px 2px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -294,12 +209,7 @@ Table of Contents
 	transition-timing-function: ease;
 }
 
-.ruled_paper li:nth-child(1) {
-	-webkit-transition-duration: 0.6s;
-	-moz-transition-duration: 0.6s;
-	transition-duration: 0.6s;
-}
-
+.ruled_paper li:nth-child(1),
 .ruled_paper li:nth-child(2) {
 	-webkit-transition-duration: 0.6s;
 	-moz-transition-duration: 0.6s;
@@ -312,12 +222,7 @@ Table of Contents
 	transition-duration: 0.4s;
 }
 
-.ruled_paper li:nth-child(4) {
-	-webkit-transition-duration: 0.5s;
-	-moz-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-}
-
+.ruled_paper li:nth-child(4),
 .ruled_paper li:nth-child(5) {
 	-webkit-transition-duration: 0.5s;
 	-moz-transition-duration: 0.5s;
@@ -484,5 +389,18 @@ figcaption p {
 		padding-left: 0;
 		left: -80px;
 		font-size: 90%;
+	}
+}
+
+.mobile, .narrow
+{
+	figure.book{
+		//display:none;
+		.paperback-front{
+			transform: rotateY(-2deg) !important;
+		}
+	}
+	.book-mobile{
+		//display:block;
 	}
 }
