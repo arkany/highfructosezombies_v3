@@ -855,7 +855,7 @@ header .icon.circled {
     top: 0;
     width: auto;
     margin-right: -2em;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
     height: 440px;
     overflow: hidden; }
   .carousel article p {
@@ -922,10 +922,68 @@ iframe {
   background: url("../images/header-social.png") no-repeat center center;
   background-size: contain; }
 
-#resize-fail {
-  position: absolute;
-  left: 0; }
+.book-mobile {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch; }
 
+.book-graphic {
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  height: 600px;
+  width: 100%;
+  margin-top: -90px;
+  background: url(../images/book-mobile.png) no-repeat center center;
+  background-size: contain; }
+
+/*
+    Legacy Firefox implementation treats all flex containers
+    as inline-block elements.
+*/
+@-moz-document url-prefix() {
+  .book-mobile {
+    width: 100%;
+    -moz-box-sizing: border-box; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  margin-top: -150px; }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  margin-top: -150px; }
 /* ///////////////////////////////////////////////////
 
 PAPERBACK
@@ -1264,7 +1322,17 @@ figcaption p {
     padding-left: 0;
     left: -80px;
     font-size: 90%; } }
-.mobile figure.book .paperback-front, .narrow figure.book .paperback-front {
-  transform: rotateY(-2deg) !important; }
+div.book-mobile {
+  display: flex; }
+
+figure.book {
+  display: none; }
+
+html:not(.mobile) figure.book,
+html:not(.narrower) figure.book {
+  display: block; }
+html:not(.mobile) div.book-mobile,
+html:not(.narrower) div.book-mobile {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

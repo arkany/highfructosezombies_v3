@@ -392,15 +392,28 @@ figcaption p {
 	}
 }
 
-.mobile, .narrow
-{
+div.book-mobile{
+	display:flex;
+}
+figure.book{
+	display:none;
+}
+html:not(.mobile),
+html:not(.narrower){
 	figure.book{
-		//display:none;
-		.paperback-front{
-			transform: rotateY(-2deg) !important;
-		}
+		display:block;
 	}
-	.book-mobile{
-		//display:block;
+	div.book-mobile{
+		display:none;
 	}
 }
+// html.mobile,
+// html.narrow
+// {
+// 	figure.book{
+// 		display:none;
+// 	}
+// 	.book-mobile{
+// 		display:flex !important;
+// 	}
+// }
