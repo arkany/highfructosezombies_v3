@@ -1224,6 +1224,16 @@ iframe{
 		height:280px;
 	}
 }
+.etsy{
+	display: block;
+	background: url('../images/etsy-logo.png') no-repeat center center;
+	background-size:contain;
+	height:100px;
+	width:100px;
+	margin: 0 auto 30px;
+
+}
+
 .video-container{
 	width:100%;
 	iframe{
@@ -1240,11 +1250,15 @@ iframe{
 #story{
 	@include headers(260px,'story');
 }
+#zomtreats{
+	@include headers(350px,'zomtreats');
+}
 #issues{
 	@include headers(280px,'issues');
 }
 #team{
 	@include headers(500px,'team');
+	height: 160px;
 }
 #interviews{
 	@include headers(290px,'interviews');
@@ -1253,7 +1267,7 @@ iframe{
 	@include headers(180px,'quotes');
 }
 #social{
-	@include headers(300px,'social');
+	@include headers(500px,'social');
 }
 .book-mobile{
 	//display:none;

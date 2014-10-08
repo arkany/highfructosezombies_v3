@@ -875,6 +875,14 @@ iframe {
 @media screen and (max-width: 1280px) {
   .video-fade {
     height: 280px; } }
+.etsy {
+  display: block;
+  background: url("../images/etsy-logo.png") no-repeat center center;
+  background-size: contain;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto 30px; }
+
 .video-container {
   width: 100%; }
   .video-container iframe {
@@ -885,6 +893,13 @@ iframe {
   max-width: 260px;
   height: 104px;
   background: url("../images/header-story.png") no-repeat center center;
+  background-size: contain; }
+
+#zomtreats {
+  margin: 0 auto;
+  max-width: 350px;
+  height: 104px;
+  background: url("../images/header-zomtreats.png") no-repeat center center;
   background-size: contain; }
 
 #issues {
@@ -899,7 +914,8 @@ iframe {
   max-width: 500px;
   height: 104px;
   background: url("../images/header-team.png") no-repeat center center;
-  background-size: contain; }
+  background-size: contain;
+  height: 160px; }
 
 #interviews {
   margin: 0 auto;
@@ -917,7 +933,7 @@ iframe {
 
 #social {
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 500px;
   height: 104px;
   background: url("../images/header-social.png") no-repeat center center;
   background-size: contain; }
