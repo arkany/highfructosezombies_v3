@@ -1,0 +1,37 @@
+#promo{
+  padding: 0em 0 1em 0 !important;
+  h2{
+    background-color: $black;
+    color: $pink;
+    text-align:center;
+    text-transform:uppercase;
+
+  }
+  .promo-content{
+    padding: 50px;
+    @extend %flexbox;
+    @include align-content(stretch);
+    @media screen and (max-width:567px){
+      display:block !important;
+      float:none;
+    }
+    .promo-img{
+      background: url(../images/promo-piq-sm.jpg) no-repeat center center;
+      background-size:contain;
+      height:100%;
+      min-height:300px;
+      width:300px;
+      margin-right:20px;
+      @include flex(0, 0, 300px);
+      @include align-self(stretch);
+      @media screen and (max-width:567px){
+        margin: 0 auto 20px;
+      }
+
+    }
+    .promo-copy{
+      @include flex(1,1,auto);
+      @include align-self(stretch);
+    }
+  }
+}

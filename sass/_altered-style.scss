@@ -1219,6 +1219,13 @@ iframe{
 	background-color: $blue;
 	height:370px;
 }
+#banner header{
+	border-bottom: 2em solid #f0f4f4;
+	padding-bottom: 1em;
+}
+#zomtreat-section{
+	padding-top: 1em;
+}
 @media screen and (max-width: 1280px) {
 	.video-fade{
 		height:280px;
@@ -1340,6 +1347,33 @@ iframe{
 
 }
 
+.right-sidebar #header{
+	padding: 1em 0 1em 0;
+}
+.right-sidebar #header .overlay{
+	opacity: 0.5;
+}
+.right-sidebar #header span.blue{
+	color: black;
+}
+
+h1#logo{
+	background: url('../images/hfz-logo.png') no-repeat center center;
+	background-size: contain;
+	opacity: 1;
+	text-indent: -9999px;
+	height: 193px;
+	width: 350px;
+
+	@media only screen 
+	and (min-device-width : 320px) 
+	and (max-device-width : 568px) 
+	and (orientation : portrait) { 
+		width:280px;
+	}
+
+}
+
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 568px) 
@@ -1353,5 +1387,7 @@ and (max-device-width : 480px)
 and (orientation : portrait) { 
 	margin-top:-150px;
 }
+
+
 
 
