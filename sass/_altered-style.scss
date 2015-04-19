@@ -48,7 +48,7 @@ $color1: $pink;
 		font-weight: 400;
 		color: #483949;
 		line-height: 1.25em;
-		
+
 		a{
 			color: inherit;
 			text-decoration: none;
@@ -63,24 +63,24 @@ $color1: $pink;
 		font-size: 2.85em;
 		font-weight:600;
 	}
-	
+
 	h3
 	{
 		font-size: 1.25em;
 	}
-	
+
 	h4
 	{
 		font-size: 1em;
 		margin: 0 0 0.25em 0;
 	}
-	
+
 	strong, b
 	{
 		font-weight: 400;
 		color: #483949;
 	}
-	
+
 	em, i
 	{
 		font-style: italic;
@@ -89,17 +89,16 @@ $color1: $pink;
 	a
 	{
 		color: inherit;
-		border-bottom: solid 1px rgba($color1,0.15);
+		border-bottom: solid 1px rgba($color1,0.5);
 		text-decoration: none;
-		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-		
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+
 		&:hover{
 			color: $pink;
-			//color: #ef8376;
 			border-bottom-color: transparent;
 		}
 	}
@@ -109,21 +108,21 @@ $color1: $pink;
 		top: 0.5em;
 		font-size: 0.8em;
 	}
-	
+
 	sup
 	{
 		position: relative;
 		top: -0.5em;
 		font-size: 0.8em;
 	}
-	
+
 	blockquote
 	{
 		border-left: solid 0.5em #ddd;
 		padding: 1em 0 1em 2em;
 		font-style: italic;
 	}
-	
+
 	p, ul, ol, dl, table
 	{
 		margin-bottom: 1em;
@@ -138,7 +137,7 @@ $color1: $pink;
 	{
 		clear: both;
 	}
-	
+
 	hr
 	{
 		position: relative;
@@ -178,7 +177,7 @@ $color1: $pink;
 	}
 
 	/* Sections/Article */
-	
+
 		section,
 		article
 		{
@@ -199,7 +198,8 @@ $color1: $pink;
 					height: 50px;
 				}
 				p{
-					font-style: italic;
+					text-align:center;
+					//font-style: italic;
 				}
 			}
 		}
@@ -220,7 +220,7 @@ $color1: $pink;
 				text-align: inherit;
 			}
 		}
-			
+
 		footer
 		{
 			margin: 2.5em 0 0 0;
@@ -238,9 +238,9 @@ $color1: $pink;
 			border: 0;
 			outline: 0;
 		}
-		
+
 			/* Uncomment the block below if you want linked images to highlight on hover */
-		
+
 			.image img
 			{
 				display: block;
@@ -257,15 +257,15 @@ $color1: $pink;
 			{
 				display: block;
 				width: 100%;
-				margin: 0 0 4em 0;
+				margin: 0 0 2em 0;
 			}
-			
+
 			.image.left
 			{
 				float: left;
 				margin: 0 2em 2em 0;
 			}
-			
+
 			.image.centered
 			{
 				display: block;
@@ -289,7 +289,7 @@ $color1: $pink;
 				list-style: disc;
 				padding-left: 1em;
 			}
-			
+
 				ul.default li
 				{
 					padding-left: 0.5em;
@@ -299,39 +299,39 @@ $color1: $pink;
 			{
 				margin: 3em 0 0 0;
 			}
-			
+
 				form ul.actions
 				{
 					margin-top: 0;
 				}
-			
+
 				ul.actions li
 				{
 					display: inline-block;
 					margin: 0 0.75em 0 0.75em;
 				}
-				
+
 				ul.actions li:first-child
 				{
 					margin-left: 0;
 				}
-				
+
 				ul.actions li:last-child
 				{
 					margin-right: 0;
 				}
-							
+
 			ul.divided
 			{
 			}
-			
+
 				ul.divided li
 				{
 					border-top: solid 1px rgba(128,128,128,0.2);
 					padding-top: 1.5em;
 					margin-top: 1.5em;
 				}
-				
+
 				ul.divided li:first-child
 				{
 					border-top: 0;
@@ -344,7 +344,7 @@ $color1: $pink;
 				height: 1em;
 				line-height: 1em;
 			}
-			
+
 				ul.menu li
 				{
 					display: inline-block;
@@ -352,7 +352,7 @@ $color1: $pink;
 					padding-left: 1.25em;
 					margin-left: 1.25em;
 				}
-				
+
 				ul.menu li:first-child
 				{
 					border-left: 0;
@@ -389,7 +389,7 @@ $color1: $pink;
 					}
 				}
 			}
-		
+
 		ol
 		{
 			&.default{
@@ -399,14 +399,14 @@ $color1: $pink;
 					padding-left: 0.25em;
 				}
 			}
-		}	
-				
+		}
+
 	/* Form */
 
 		form
 		{
 		}
-		
+
 			form label
 			{
 				display: block;
@@ -414,7 +414,7 @@ $color1: $pink;
 				color: #483949;
 				margin: 0 0 1em 0;
 			}
-		
+
 			form input[type="text"],
 			form input[type="email"],
 			form input[type="password"],
@@ -429,11 +429,11 @@ $color1: $pink;
 				border-radius: 0.5em;
 				border: solid 1px #E5E5E5;
 				padding: 1em;
-				-moz-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-				-webkit-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-				-o-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-				-ms-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-				transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+				-moz-transition: background-color 0.25s ease-in-out, border-color 0.25s ease-in-out;
+				-webkit-transition: background-color 0.25s ease-in-out, border-color 0.25s ease-in-out;
+				-o-transition: background-color 0.25s ease-in-out, border-color 0.25s ease-in-out;
+				-ms-transition: background-color 0.25s ease-in-out, border-color 0.25s ease-in-out;
+				transition: background-color 0.25s ease-in-out, border-color 0.25s ease-in-out;
 			}
 
 			form input[type="text"],
@@ -443,7 +443,7 @@ $color1: $pink;
 			{
 				line-height: 1em;
 			}
-			
+
 			form textarea
 			{
 				min-height: 9em;
@@ -488,14 +488,14 @@ $color1: $pink;
 				{
 					border: 0;
 				}
-			
+
 	/* Table */
-	
+
 		table
 		{
 			width: 100%;
 		}
-		
+
 			table.default
 			{
 				width: 100%;
@@ -510,40 +510,40 @@ $color1: $pink;
 				{
 					border-top: 0;
 				}
-			
+
 				table.default tbody tr:nth-child(2n+1)
 				{
 					background: #fafafa;
 				}
-				
+
 				table.default td
 				{
 					padding: 0.5em 1em 0.5em 1em;
 				}
-				
+
 				table.default th
 				{
 					text-align: left;
 					font-weight: 400;
 					padding: 0.5em 1em 0.5em 1em;
 				}
-			
+
 				table.default thead
 				{
 					border-bottom: solid 2px #e5e5e5;
 				}
-				
+
 				table.default tfoot
 				{
 					border-top: solid 2px #e5e5e5;
 				}
 
 	/* Button */
-		
+
 		input[type="button"],
 		input[type="submit"],
 		input[type="reset"],
-		.button	
+		.button
 		{
 			position: relative;
 			display: inline-block;
@@ -557,11 +557,11 @@ $color1: $pink;
 			cursor: pointer;
 			outline: 0;
 			font-weight: 300;
-			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-moz-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+			-webkit-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+			-o-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+			-ms-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+			transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 			margin-right: 20px;
 		}
 
@@ -573,14 +573,14 @@ $color1: $pink;
 				color: #fff;
 				background: lighten($pink, 15%);
 			}
-			
+
 			input[type="button"].alt,
 			input[type="submit"].alt,
 			input[type="reset"].alt,
 			.button.alt
 			{
 				background: #2B252C;
-			}		
+			}
 
 
 				input[type="button"].alt:hover,
@@ -589,19 +589,19 @@ $color1: $pink;
 				.button.alt:hover
 				{
 					background: #3B353C;
-				}		
+				}
 
 	/* Post */
 
 		.post
 		{
 		}
-		
+
 			.post.stub
 			{
 				text-align: center;
 			}
-			
+
 				.post.stub header
 				{
 					margin: 0;
@@ -626,7 +626,7 @@ $color1: $pink;
 			-webkit-font-smoothing:antialiased;
 			-moz-osx-font-smoothing:grayscale;
 		}
-		
+
 		.icon > .label {
 			display: none;
 		}
@@ -644,7 +644,7 @@ $color1: $pink;
 			text-align: center;
 			font-size: 1.25em;
 		}
-		
+
 			header .icon.circled
 			{
 				margin: 0 0 2em 0;
@@ -664,7 +664,7 @@ $color1: $pink;
 
 		}
 	}
-	
+
 		.wrapper.style2
 		{
 			padding-top: 0;
@@ -691,7 +691,7 @@ $color1: $pink;
 		{
 			padding: 4em 0 4em 0;
 		}
-	
+
 			.homepage #header .overlay
 			{
 				content: '';
@@ -709,7 +709,7 @@ $color1: $pink;
 				-ms-transition: opacity 2s ease-in-out;
 				transition: opacity 2s ease-in-out;
 			}
-		
+
 			.homepage #header.ready .overlay
 			{
 				opacity: 0.5;
@@ -722,7 +722,7 @@ $color1: $pink;
 			margin: 0;
 			padding: 4em 0 0 0;
 		}
-	
+
 		#header h1{
 			opacity:0;
 			color: #fff;
@@ -733,16 +733,16 @@ $color1: $pink;
 			.homepage #header h1{
 				font-size: 4em;
 			}
-		
+
 			#header h1 a{
 				color: inherit;
 			}
-	
+
 		#header header > p{
 			font-size: 1.25em;
 			margin: 0;
 		}
-		
+
 		#header .button{
 			display: inline-block;
 			border-radius: 100%;
@@ -753,15 +753,15 @@ $color1: $pink;
 			font-size: 1.25em;
 			padding: 1.5em 0.2em 0 0.2em;
 		}
-		
+
 		#header header{
 			display: inline-block;
 		}
-		
+
 		#header footer{
 			margin: 1em 0 0 0;
 		}
-		
+
 		#header hr{
 			top: 1.5em;
 			margin-bottom: 3em;
@@ -769,10 +769,10 @@ $color1: $pink;
 			border-bottom-color: rgba(192,192,192,0.35);
 			box-shadow: inset 0 1px 0 0 rgba(192,192,192,0.35);
 			&:before, &:after{
-				background: rgba(192,192,192,0.35);				
+				background: rgba(192,192,192,0.35);
 			}
 		}
-		
+
 /*********************************************************************************/
 /* Nav                                                                           */
 /*********************************************************************************/
@@ -788,7 +788,7 @@ $color1: $pink;
 		z-index: 1;
 		overflow: hidden;
 	}
-	
+
 		#nav > ul
 		{
 			line-height: 0px;
@@ -800,7 +800,7 @@ $color1: $pink;
 			border-left: solid 1px rgba($black,0.35);
 			border-right: solid 1px rgba($black,0.35);
 		}
-		
+
 			#nav > ul:before,
 			#nav > ul:after
 			{
@@ -815,19 +815,19 @@ $color1: $pink;
 				border-top: solid 1px rgba($black,0.35);
 				border-bottom: solid 1px rgba($black,0.35);
 			}
-		
+
 			#nav > ul:before
 			{
 				left: 100%;
 				margin-left: 1px;
 			}
-		
+
 			#nav > ul:after
 			{
 				right: 100%;
 				margin-right: 1px;
 			}
-		
+
 			#nav > ul > li
 			{
 				display: inline-block;
@@ -863,8 +863,8 @@ $color1: $pink;
 				}
 
 			}
-			
-			
+
+
 
 
 
@@ -894,7 +894,7 @@ $color1: $pink;
 			}
 		}
 	}
-		
+
 			.dropotron li:first-child
 			{
 				border-top: 0;
@@ -917,7 +917,7 @@ $color1: $pink;
 				-ms-transition: color 0.35s ease-in-out;
 				transition: color 0.35s ease-in-out;
 			}
-		
+
 		.dropotron.level-0
 		{
 			margin-top: 2em;
@@ -934,7 +934,7 @@ $color1: $pink;
 				border-right: solid 0.75em rgba(64,64,64,0);
 			}
 		}
-		
+
 
 /*********************************************************************************/
 /* Banner                                                                        */
@@ -1003,9 +1003,9 @@ $color1: $pink;
 		section:first-of-type
 		{
 			padding-top: 2em;
-		}		
+		}
 	}
-	
+
 /*********************************************************************************/
 /* Footer                                                                        */
 /*********************************************************************************/
@@ -1030,7 +1030,7 @@ $color1: $pink;
 			text-align: center;
 			cursor: default;
 		}
-		
+
 		#footer h2,
 		#footer h3,
 		#footer h4,
@@ -1052,7 +1052,7 @@ $color1: $pink;
 				color: rgba($pink,0.85);
 			}
 		}
-		
+
 		#footer .copyright
 		{
 			text-align: center;
@@ -1092,33 +1092,33 @@ $color1: $pink;
 			margin-top: -6em;
 			cursor: pointer;
 		}
-		
+
 		.carousel .forward
 		{
 			right: 0;
 		}
-		
+
 		.carousel .backward
 		{
 			left: 0;
 		}
 		.carousel .forward,
-		.carousel .backward{	
+		.carousel .backward{
 			&:before{
 				content: '';
 				display: block;
 				width: 6em;
 				height: 6em;
 				border-radius: 100%;
-				background-color: rgba(72,57,73, 0.5);				
+				background-color: rgba(72,57,73, 0.5);
 				position: absolute;
 				top: 50%;
 				margin-top: -3em;
-				-moz-transition: background-color 0.35s ease-in-out;
-				-webkit-transition: background-color 0.35s ease-in-out;
-				-o-transition: background-color 0.35s ease-in-out;
-				-ms-transition: background-color 0.35s ease-in-out;
-				transition: background-color 0.35s ease-in-out;
+				-moz-transition: background-color 0.25s ease-in-out;
+				-webkit-transition: background-color 0.25s ease-in-out;
+				-o-transition: background-color 0.25s ease-in-out;
+				-ms-transition: background-color 0.25s ease-in-out;
+				transition: background-color 0.25s ease-in-out;
 				-webkit-backface-visibility: hidden;
 			}
 		}
@@ -1149,12 +1149,12 @@ $color1: $pink;
 				-ms-transform: scaleX(-1);
 				transform: scaleX(-1);
     		}
-			
+
 			.carousel .forward:before
 			{
 				right: -3em;
 			}
-			
+
 			.carousel .backward:before
 			{
 				left: -3em;
@@ -1173,7 +1173,7 @@ $color1: $pink;
 			-webkit-overflow-scrolling: touch;
 			padding: 0 2em 0 2em;
 		}
-	
+
 		.carousel article
 		{
 			display: inline-block;
@@ -1184,10 +1184,10 @@ $color1: $pink;
 			margin: 0 2em 0 0;
 			white-space: normal;
 			opacity: 1.0;
-			-moz-transition: opacity 0.75s ease-in-out;			
-			-webkit-transition: opacity 0.75s ease-in-out;			
-			-o-transition: opacity 0.75s ease-in-out;			
-			-ms-transition: opacity 0.75s ease-in-out;			
+			-moz-transition: opacity 0.75s ease-in-out;
+			-webkit-transition: opacity 0.75s ease-in-out;
+			-o-transition: opacity 0.75s ease-in-out;
+			-ms-transition: opacity 0.75s ease-in-out;
 			transition: opacity 0.75s ease-in-out;
 			&.loading{
 			  opacity: 0;
@@ -1199,8 +1199,8 @@ $color1: $pink;
 				width: auto;
 				margin-right: -2em;
 				margin-bottom: 1em;
-				height:440px;	
-				overflow:hidden;		
+				height:440px;
+				overflow:hidden;
 			}
 			p{
 				text-align: center;
@@ -1365,29 +1365,25 @@ h1#logo{
 	height: 193px;
 	width: 350px;
 
-	@media only screen 
-	and (min-device-width : 320px) 
-	and (max-device-width : 568px) 
-	and (orientation : portrait) { 
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 568px)
+	and (orientation : portrait) {
 		width:280px;
 	}
 
 }
 
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) 
-and (orientation : portrait) { 
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
 	margin-top:-150px;
 }
 
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) 
-and (orientation : portrait) { 
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+and (orientation : portrait) {
 	margin-top:-150px;
 }
-
-
-
-
