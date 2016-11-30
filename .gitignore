@@ -2,6 +2,7 @@
 *.psd
 sass/*
 _archive/*
+_archive/*/*
 headers-assets/
 Helios/
 *.scssc
