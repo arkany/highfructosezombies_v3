@@ -215,7 +215,7 @@ $color1: $pink;
 			{
 				display: block;
 				font-size: 1.5em;
-				margin: 1em 0 2em 0;
+				//margin: 1em 0 2em 0;
 				line-height: 1.5em;
 				text-align: inherit;
 			}
@@ -720,7 +720,7 @@ $color1: $pink;
 			position: relative;
 			z-index: 1;
 			margin: 0;
-			padding: 4em 0 0 0;
+			//padding: 4em 0 0 0;
 		}
 
 		#header h1{
@@ -752,6 +752,7 @@ $color1: $pink;
 			text-align: center;
 			font-size: 1.25em;
 			padding: 1.5em 0.2em 0 0.2em;
+			margin: 1em;
 		}
 
 		#header header{
@@ -1276,9 +1277,29 @@ iframe{
 #social{
 	@include headers(500px,'social');
 }
+
+.book-about{
+	background-image: url(../images/header-image.png);
+	background-size: contain;
+	height:400px;
+	width:400px;
+	background-repeat: no-repeat;
+	margin:12px auto;
+
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 568px)
+	and (orientation : portrait) {
+		width:280px;
+		height:280px;
+	}
+	@media screen and (max-width: 400px) {
+		width:280px;
+		height:280px;
+	}
+}
 .book-mobile{
 	//display:none;
-
 	//flex material
 	display: -webkit-box;
     display: -moz-box;
@@ -1329,9 +1350,8 @@ iframe{
 	height:600px;
 	width:100%;
 	margin-top:-90px;
-	background: url(../images/book-mobile.png) no-repeat center center;
+	background: url(../images/header-image.png) no-repeat center center;
 	background-size:contain;
-
 }
 
 /*
@@ -1362,13 +1382,16 @@ h1#logo{
 	background-size: contain;
 	opacity: 1;
 	text-indent: -9999px;
-	height: 193px;
-	width: 350px;
+	width: 450px;
+	height: 200px;
 
 	@media only screen
 	and (min-device-width : 320px)
 	and (max-device-width : 568px)
 	and (orientation : portrait) {
+		width:280px;
+	}
+	@media screen and (max-width: 400px) {
 		width:280px;
 	}
 

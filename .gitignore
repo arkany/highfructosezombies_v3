@@ -1,4 +1,7 @@
 
 *.psd
-
+sass/*
+_archive/*
+headers-assets/
+Helios/
 *.scssc
